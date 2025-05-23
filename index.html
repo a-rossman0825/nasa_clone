@@ -200,35 +200,56 @@
     </section>
     <!-- !SECTION -->
     <!-- SECTION HERO LANDING -->
-    <section class="container-fluid hero-bg">
-      <div class="row ms-1">
-        <div class="col-6 mt-5">
-          <h1 class="hero-header fw-bold text-white">Return To Earth</h1>
+    <section class="container-fluid hero-bg position-relative">
+      <div class="overlay"></div>
+      <div class="position-relative z-2 d-flex flex-column justify-content-between" style="min-height: 100vh;">
+        <div class="d-flex flex-grow-1 align-items-center ps-3 ps-md-5">
+          <div class="row w-100">
+            <div class="col-md-6">
+              <h1 class="hero-header fw-bold text-white letter-spacing-1">Return To Earth</h1>
+              <p class="fs-5 text-white letter-spacing-1">
+                NASA and its international partners will soon receive scientific research samples and hardware after a SpaceX Dragon spacecraft departs the International Space Station on Friday, May 23, for its return to Earth. Live coverage begins at 11:45 a.m. EDT on NASA+.
+              </p>
+              <button class="btn btn-danger fw-bold fs-5 px-4">Mission Updates</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row ms-1">
-        <div class="col-3 text-white">
-          <p>NASA and its international partners will soon receive scientific research samples and hardware after a SpaceX Dragon spacecraft departs the International Space Station on Friday, May 23, for its return to Earth. Live coverage begins at 11:45 a.m. EDT on NASA+.</p>
+        <!--NOTE HERO BOTTOM CARDS -->
+        <div class="container-fluid px-3 px-md-5 pb-5">
+          <div class="row g-3 text-white">
+            <div class="col-12 col-md-4 col-lg-3 border-t me-lg-4">
+              <p class="mt-4 letter-spacing-1">RETURNING SCIENCE</p>
+              <a href="#" class="text-decoration-none text-white fw-bold">
+                MISSE-20
+                <span class="video-arrow">
+                  <i class="mdi mdi-arrow-right-circle text-danger"></i>
+                </span>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 me-lg-4 border-t">
+              <p class="mt-4 letter-spacing-1">RETURNING SCIENCE</p>
+              <a href="#" class="text-decoration-none text-white fw-bold">
+                Astrobee-REACCH
+                <span class="video-arrow">
+                  <i class="mdi mdi-arrow-right-circle text-danger"></i>
+                </span>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 border-t">
+              <p class="mt-4 letter-spacing-1">RETURNING SCIENCE</p>
+              <a href="#" class="text-decoration-none text-white fw-bold">
+                OPTICA
+                <span class="video-arrow">
+                  <i class="mdi mdi-arrow-right-circle text-danger"></i>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
-      <div class="row ms-1">
-        <div class="col-3">
-          <button class="btn btn-danger fw-bold">Mission Updates</button>
-        </div>
-      </div>
-      </div>
-      <div class="row ms-1 text-white">
-        <div class="col-lg-3 border-t me-3">
-          <p class="small mt-3">RETURNING SCIENCE</p>
-          <a href="#" class="text-decoration-none text-white fw-bold">
-              Recently Published
-              <i class="mdi mdi-arrow-right-circle text-danger"></i>
-            </a>
-        </div>
-        <div class="col-lg-3 border-t me-3">HERO CARD 2</div>
-        <div class="col-lg-3 border-t">HERO CARD 3</div>
       </div>
     </section>
     <!-- !SECTION -->
+
     <!-- SECTION FEATURED NEWS -->
     <section class="container-fluid bg-white">
       <div class="container">
@@ -240,7 +261,9 @@
           <div class="col-md-6 text-start text-md-end">
             <a href="#" class="fs-5 text-decoration-none text-black fw-bold">
               Recently Published
-              <i class="mdi mdi-arrow-right-circle text-danger"></i>
+              <span class="video-arrow">
+                <i class="mdi mdi-arrow-right-circle text-danger"></i>
+              </span>
             </a>
           </div>
         </div>
@@ -360,7 +383,7 @@
       </div>
     </section><!-- !SECTION -->
     <!--SECTION VIDEO SECTION-->
-    <section class="video-section container-fluid gradient-overlay">
+    <section class="video-section container-fluid video-overlay">
       <video autoplay muted loop playsinline class="bg-video">
         <source src="./images/robot/robot-video.mp4" type="video/mp4" />
       </video>
@@ -371,7 +394,7 @@
             <p class="dust-subheader lead">
               A Martian dust devil photobombed NASA’s Perseverance Mars rover as it took a selfie on May 10 to mark its 1,500th Martian day exploring the Red Planet. At the time, the rover was parked in “Witch Hazel Hill,” an area on Jezero Crater’s rim that the rover has been exploring over the past five months.
             </p>
-            <a class="dust-link text-white text-decoration-none" href="#">
+            <a class="text-white text-decoration-none" href="#">
               Mars Exploration
               <span class="video-arrow">
                 <i class="mdi mdi-arrow-right-circle text-danger"></i>
@@ -396,7 +419,7 @@
         </div>
       </div>
       <!--NOTE ARTICLES SECTION -->
-      <div class="row g-2">
+      <div class="row g-3">
         <!-- ARTICLE 1 -->
         <div class="col-md-6 col-lg-3">
           <div class="card bg-black">
@@ -445,7 +468,55 @@
     </section>
     <!-- !SECTION -->
     <!-- SECTION DAILY IMAGE -->
-    
+    <section class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-3">
+          <p class="small letter-spacing-1">TODAY</p>
+          <h5>Preflight Flower</h5>
+          <p>A flower is seen in the foreground with a Soyuz rocket on the launch pad at the Baikonur Cosmodrome in Kazakhstan on April 7, 2025. Expedition 73 crewmembers including NASA astronaut Jonny Kim launched aboard their Soyuz MS-27 spacecraft on April 8.</p>
+          <a href="#" class="fs-5 fw-bold text-decoration-none text-black">
+            Browse Image Archive
+            <i class="mdi mdi-arrow-right-circle text-danger video-arrow"></i>
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <img src="./images/image-of-the-day.webp" alt="a Space view of the St. Clair River Delta" class="img-fluid w-100 daily-borders" style="padding: 0 0 !important;">
+          </div>
+          <div class="row text-end">
+            <a href="#" class="fs-5 fw-bold text-decoration-none text-black"  style="padding-right: 0 !important;">
+              View image
+              <i class="mdi mdi-arrow-right-circle text-danger video-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !SECTION -->
+    <!-- SECTION EARTH INFO -->
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="fw-bold">Earth Information Center</p>
+          <h5>Explore our changing planet</h5>
+          <p>For more than 50 years, NASA satellites have provided data on Earth’s land, water, air, temperature, and climate. NASA’s Earth Information Center allows visitors to see how our planet is changing in six key areas: sea level rise and coastal impacts, health and air quality, wildfires, greenhouse gases, sustainable energy, and agriculture.</p>
+          <a href="#" class="fs-5 fw-bold text-decoration-none text-black">
+            Earth Science
+            <i class="mdi mdi-arrow-right-circle text-danger video-arrow"></i>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="./images/planet-1.webp" alt="a Space view of the St. Clair River Delta" class="img-fluid w-100">
+          <p class="small">The St. Clair River flows into the freshwater Lake St. Clair and separates the American state of Michigan (top) from the Canadian province of Ontario (bottom) in this photograph from the International Space Station as it orbited 260 miles above.</p>
+          <p class="small fw-bold">NASA</p>
+        </div>
+      </div>
+      <!-- NOTE MORE IMAGES -->
+      <div class="row">
+        .
+      </div>
+    </section>
+    <!-- !SECTION -->
   </main>
   <footer>
 
